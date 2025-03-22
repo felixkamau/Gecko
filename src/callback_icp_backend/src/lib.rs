@@ -76,6 +76,18 @@ async fn get_icp_price() -> String {
     }
 }
 
+
+
+
+// curl --request GET \
+//      --url 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=internet-computer' \
+//      --header 'accept: application/json' \
+//      --header 'x-cg-demo-api-key: CG-fmzdzZXRherhMZb2u2kB9PCz'
+
+// #[update]
+// fn exchange() -> String{
+
+// }
 #[query]
 fn transform(raw: TransformArgs) -> HttpResponse {
     let headers = vec![
